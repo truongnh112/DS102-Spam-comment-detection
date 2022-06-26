@@ -90,7 +90,7 @@ def main():
                 crawl_data(url)
                 build_dataset()
             except:
-                st.write("Lấy link khác đi")
+                st.write("")
             data = pd.read_csv('data/dataset.csv')
             with open('data/dataset.csv', 'rb') as csv:
                 file_container = st.expander("Check your crawl .csv")
